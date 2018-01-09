@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Vending Machine</title>
+       
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link href="css/bootstrap.css" rel="stylesheet">
+	    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="css/vendingmachinestyles.css">
+    </head>
+    <body>
+        <div class="container">
+          <h1 id="first" class="original text-center">Vending Machine</h1>
+          <ul class="list-group" id="errorMessages"></ul>
+          
+          <div class="col-md-7">
+          <div id="whereItemsGo">
+          </div>
+          </div>
+
+          <div class="row">
+          <div class="col-md-5">
+
+      
+          <form class="text-center" id="formId">
+            <h3>Total $ In</h3>
+            
+              <input id="priceEntered" type="text" name="priceEntered" placeHolder="$0.00" value="0.00" readonly><br>  
+              <!-- value="$0.00" -->
+            
+            <button type="button"
+              id="dollar-button"
+              class="btn btn-default">
+              Add Dollar
+            </button>
+            <button type="button"
+              id="quarter-button"
+              class="btn btn-default">
+              Add Quarter
+            </button><br>
+            <button type="button"
+              id="dime-button"
+              class="btn btn-default">
+              Add Dime
+            </button>
+            <button type="button"
+              id="nickel-button"
+              class="btn btn-default">
+              Add Nickel
+            </button>
+            </form>
+          
+          
+            <form class="text-center" id="formId">
+            <h3>Messages</h3>
+              <input id="messages" type="text" name="messages" readonly> <br>
+              Item: <input id="itemName" value="" type="text" name="item" readonly><br>
+               <button type="button"
+              id="makePurchase"
+              class="btn btn-default">
+              Make Purchase
+            </button>
+            </form>
+          
+          
+
+           <form class="text-center">
+            <h3>Change</h3>
+            
+            <input id="messageChange" type="text" value="" name="change" readonly><br>
+            
+            <button type="button"
+              id="change-button"
+              class="btn btn-default">
+              Change Return
+            </button>
+          </form>
+
+          </div>
+          </div>
+
+        </div>
+        <script src="js/jquery-2.2.4.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/home.js"></script>
+    </body>
+</html>
